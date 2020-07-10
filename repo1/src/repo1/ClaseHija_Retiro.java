@@ -12,8 +12,8 @@ package repo1;
 public class ClaseHija_Retiro extends ClasePadre_Abstracta {
     
     public void Transacciones(){
-        
-        System.out.println("Cuanto deseas retirar del cajero?" );
+        try {
+            System.out.println("Cuanto deseas retirar del cajero?" );
         Retiro();
         if(retiro <= getSaldo()){
             transacciones = getSaldo();
@@ -22,10 +22,18 @@ public class ClaseHija_Retiro extends ClasePadre_Abstracta {
             System.out.println("Has Retirado de tu cuenta:" + retiro);
             System.out.println("Tu nuevo saldo actual es: " + getSaldo());
             System.out.println("------------------------------------");
-        } else {
+        }
+        else {
             System.out.println("------------------------------------");
             System.out.println("Fondos insuficientes!");
             System.out.println("------------------------------------");
+        }
+        } catch (Exception e) {
+            System.out.print("Error encontrado "+ e);
+        
+        }
+        finally {
+             System.out.print("Finalizado con éxito ");
         }
         
         
