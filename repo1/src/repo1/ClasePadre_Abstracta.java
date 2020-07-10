@@ -56,7 +56,7 @@ public abstract class ClasePadre_Abstracta {
             System.out.print("Error encontrado " +ex);
         }
         finally{
-             System.out.print("Error encontrado " );
+             System.out.print("Realizado con éxito " );
         }
     }
     
