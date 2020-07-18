@@ -8,6 +8,7 @@ import java.util.Scanner;
 /**
  *
  * @author fvp
+ actualizo
  */
 public abstract class ClasePadre_Abstracta {
     protected int transacciones, retiro, deposito;
